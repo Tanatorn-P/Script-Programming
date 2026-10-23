@@ -1,0 +1,150 @@
+[
+    {
+        "timestamp": "2026-10-24T02:21:59.473029",
+        "status": "INFO",
+        "task_type": "agent_run",
+        "message": "Document Agent started.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.473210",
+        "status": "INFO",
+        "task_type": "generate_word_report",
+        "message": "Starting task 'Generate Monthly Performance Report'",
+        "details": {
+            "name": "Generate Monthly Performance Report",
+            "type": "generate_word_report",
+            "template_path": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\templates/report_template.docx",
+            "output_path": "documents/generated_report.docx",
+            "data": {
+                "REPORT_TITLE": "Monthly Performance Summary",
+                "INTRODUCTION_TEXT": "This automated report provides a summary of key performance indicators.",
+                "MONTH_PERIOD": "August 2026"
+            },
+            "table_data": [
+                [
+                    "Category",
+                    "Value",
+                    "Trend"
+                ],
+                [
+                    "Sales Revenue",
+                    "$120,000",
+                    "Up 10%"
+                ],
+                [
+                    "Customer Acquisition",
+                    "500",
+                    "Stable"
+                ],
+                [
+                    "Project Completion Rate",
+                    "95%",
+                    "Excellent"
+                ]
+            ]
+        }
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.514821",
+        "status": "SUCCESS",
+        "task_type": "generate_word_report",
+        "message": "Task 'Generate Monthly Performance Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.515162",
+        "status": "INFO",
+        "task_type": "apply_pdf_watermark",
+        "message": "Starting task 'Apply Confidential Watermark to PDF'",
+        "details": {
+            "name": "Apply Confidential Watermark to PDF",
+            "type": "apply_pdf_watermark",
+            "input_pdf": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/source_document.pdf",
+            "output_pdf": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/watermarked_document.pdf",
+            "watermark_text": "CONFIDENTIAL",
+            "font_size": 70,
+            "color": [
+                1,
+                0,
+                0,
+                0.15
+            ],
+            "angle": 55
+        }
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.662119",
+        "status": "SUCCESS",
+        "task_type": "apply_pdf_watermark",
+        "message": "Task 'Apply Confidential Watermark to PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.662574",
+        "status": "INFO",
+        "task_type": "merge_pdfs",
+        "message": "Starting task 'Merge Project Documentation'",
+        "details": {
+            "name": "Merge Project Documentation",
+            "type": "merge_pdfs",
+            "input_pdfs": [
+                "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/dummy_doc1.pdf",
+                "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/dummy_doc2.pdf"
+            ],
+            "output_pdf": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/merged_docs.pdf"
+        }
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.680076",
+        "status": "SUCCESS",
+        "task_type": "merge_pdfs",
+        "message": "Task 'Merge Project Documentation' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.680432",
+        "status": "INFO",
+        "task_type": "extract_word_text",
+        "message": "Starting task 'Extract Text from Generated Word Report'",
+        "details": {
+            "name": "Extract Text from Generated Word Report",
+            "type": "extract_word_text",
+            "input_docx": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/generated_report.docx",
+            "output_text_file": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/extracted_word_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.712628",
+        "status": "SUCCESS",
+        "task_type": "extract_word_text",
+        "message": "Task 'Extract Text from Generated Word Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.713301",
+        "status": "INFO",
+        "task_type": "extract_pdf_text",
+        "message": "Starting task 'Extract Text from Source PDF'",
+        "details": {
+            "name": "Extract Text from Source PDF",
+            "type": "extract_pdf_text",
+            "input_pdf": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/source_document.pdf",
+            "output_text_file": "C:\\Users\\User\\Desktop\\Script\\Script-Programming\\Lab X Advance\\Lab 4 Advance\\LabADV-week-11-Project-Planning-Design-Building-an-Enhanced-Task-Manager\\documents/extracted_pdf_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.757933",
+        "status": "SUCCESS",
+        "task_type": "extract_pdf_text",
+        "message": "Task 'Extract Text from Source PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-24T02:21:59.758611",
+        "status": "INFO",
+        "task_type": "agent_run_summary",
+        "message": "Finished in 0.29s.",
+        "details": {}
+    }
+]
