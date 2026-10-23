@@ -1,0 +1,30 @@
+[
+    {
+        "OrderID": 101,
+        "Product": "Laptop",
+        "Amount": 1200.5,
+        "Price": 1200.5,
+        "Customer": "Alice"
+    },
+    {
+        "OrderID": 102,
+        "Product": "Mouse",
+        "Amount": 25.0,
+        "Price": 25.0,
+        "Customer": "Bob"
+    },
+    {
+        "OrderID": 103,
+        "Product": "Keyboard",
+        "Amount": 75.25,
+        "Price": 75.25,
+        "Customer": "Alice"
+    },
+    {
+        "OrderID": 104,
+        "Product": "Monitor",
+        "Amount": 300.0,
+        "Price": 300.0,
+        "Customer": "Charlie"
+    }
+]
