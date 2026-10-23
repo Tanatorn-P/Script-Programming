@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.ipynb_checkpoints/
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# ไฟล์ข้อมูลที่ถูกสร้างขึ้นอัตโนมัติ
+data/output_filtered_sales.csv
+data/output_updated_inventory.json
