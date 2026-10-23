@@ -1,0 +1,17 @@
+# Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.ipynb_checkpoints/ # For Jupyter/Colab notebooks
+.vscode/ # VS Code workspace settings if you don&#39;t want to share
+# Environment variables
+.env # DO NOT COMMIT YOUR .env FILE
+# Log files (if configured)
+*.log
+# Downloaded attachments / generated files
+data/attachments/
